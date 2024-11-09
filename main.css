@@ -1,0 +1,132 @@
+body {
+    background-color: blanchedalmond;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.header-content {
+    height: 25vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+}
+
+h2 {
+    grid-row: 1;
+    grid-column: 2;
+    padding-left: 7rem;
+    padding-top: 2rem;
+    margin: 2px;
+}
+
+.header-row {
+    display: grid;
+    grid-template-columns: 5fr 3rem;
+    grid-row: 2;
+    grid-column: 2;
+    padding: 2rem;
+    margin: 2px;
+}
+
+.body-row {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    grid-column: 2;
+    padding: 0.5rem;
+    margin: 2px;
+    background-color: rgb(26, 201, 143);
+    border-radius: 1rem;
+    width: 85vw;
+}
+
+
+#Additem {
+    width: 100%;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+
+
+/* Body styles */
+
+.body-content-section {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 2rem 5fr 2rem;
+    height: 75vh;
+}
+
+.body-row {
+    overflow-y: scroll;
+}
+
+.td_text,
+.td_check,
+.td_btn {
+    text-align: center;
+}
+
+
+.rounded-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.rounded-table th,
+.rounded-table td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+.rounded-table th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.rounded-table th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.rounded-table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.rounded-table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+
+.body-row::-webkit-scrollbar {
+    width: 8px;
+    /* Set the width of the vertical scrollbar */
+    height: 2px;
+    /* Set the height of the horizontal scrollbar */
+}
+
+/* Style the scrollbar track */
+.body-row::-webkit-scrollbar-track {
+    background-color: rgb(26, 201, 143);
+    /* Light grey background for the track */
+    border-radius: 10px;
+    /* Rounded corners for the track */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+.body-row::-webkit-scrollbar-thumb {
+    background-color: darksalmon;
+    /* Darker color for the thumb */
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
+}
+
+/* Hover effect for the thumb */
+.body-row::-webkit-scrollbar-thumb:hover {
+    background-color: darksalmon;
+    /* Change the thumb color when hovering */
+}
